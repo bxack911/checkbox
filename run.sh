@@ -95,7 +95,7 @@ do
       #
     "m")
         echo -e "${BOLD}Migrations up${NC}${NORMAL}"
-        $(getDockerComposeCommandName) exec php bash bin/console doctrine:migrations:migrate -n
+        $(getDockerComposeCommandName) exec php bin/console doctrine:migrations:migrate -n
         echo
         ;;
     "c")
