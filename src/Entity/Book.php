@@ -32,9 +32,19 @@ use Doctrine\ORM\Mapping as ORM;
                             'schema' => [
                                 'type' => 'object',
                                 'properties' => [
-                                    'file' => [
+                                    'name' => [
+                                        'type' => 'string'
+                                    ],
+                                    'description' => [
+                                        'type' => 'string'
+                                    ],
+                                    'image' => [
                                         'type' => 'string',
                                         'format' => 'binary'
+                                    ],
+                                    'authors' => [
+                                        'type' => 'array',
+                                        'items' => ['type' => 'integer']
                                     ]
                                 ]
                             ]

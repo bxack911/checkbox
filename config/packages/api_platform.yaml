@@ -1,5 +1,5 @@
 api_platform:
-    title: Hello API Platform
+    title: Checkbox test app
     version: 1.0.0
     formats:
         jsonld: ['application/ld+json', 'multipart/form-data']

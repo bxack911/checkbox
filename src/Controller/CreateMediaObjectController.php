@@ -38,7 +38,7 @@ class CreateMediaObjectController extends AbstractController
         $book->setPublishDate();
         $book->setImage($mediaObject);
 
-        foreach ($request->get('authors') as $author) {
+        foreach (explode(',', $request->get('authors')) as $author) {
             $book->addAuthor($em->getRepository(Author::class)->find((int) $author));
         }
 
